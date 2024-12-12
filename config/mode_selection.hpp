@@ -13,7 +13,7 @@ extern KeyboardMode *current_kb_mode;
 
 void set_mode(CommunicationBackend *backend, ControllerMode *mode) {
     // Delete keyboard mode in case one is set, so we don't end up getting both controller and
-    // keyboard inputs.
+    // keyboard inputs
     delete current_kb_mode;
     current_kb_mode = nullptr;
 
